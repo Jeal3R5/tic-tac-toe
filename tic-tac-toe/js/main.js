@@ -24,27 +24,23 @@ console.log("JS is running");
 
 /*----- cached element references -----*/
 
+//message container - h1
 //things we will refer to often
 //the game squares
 //reset button
 
 
-
-
-
-
-
-
-
 /*----- event listeners -----*/
 
-
-
-
-
-
-
+// mouse click on 9 squares
+// mouse click on reset button
+// optional - user initiates game start 
 
 
 
 /*----- functions -----*/
+
+//initialize (start) game
+//handle user interaction (this includes a lot of things)
+//render messages to the DOM
+//check for 3 in a row or winner - (main game logic)
