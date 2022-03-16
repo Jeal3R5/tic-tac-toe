@@ -3,15 +3,29 @@ console.log("JS is running");
 
 /*----- constants -----*/
 // X & O - Players
+const PLAYERS = {
+    '1': 'X',
+    "-1": 'O', 
+}
 // winning combinations
+const COMBOS = [
+    [0, 1, 2], 
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8]
+    [0, 4, 8],
+    [2, 4, 6]
+]
 
 
 
 /*----- app's state (variables) -----*/
 
-//where users click (where to put an x or o) - make sure a square is not taken first
-//Who's turn is it?
-//when we have a winner or if there is a tie - if game is ongoing
+let board;  //data variable that stores the board positons, and whaT they hold
+let turn;    // will be either x or o
+let winner; //this can be 3 things, x/o, tie, or null
 
 
 
@@ -24,8 +38,7 @@ console.log("JS is running");
 
 /*----- cached element references -----*/
 
-//message container - h1
-//things we will refer to often
+//message container - h2 -dont
 //the game squares
 //reset button
 
